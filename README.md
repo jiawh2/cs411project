@@ -8,19 +8,21 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You will need to have npm and sqlite3 installed
+You will need to have npm, sqlite3, and Neo4j installed.
 
 ```
 brew install npm
 brew install sqlite3
 ```
+https://neo4j.com/download/
+
 
 ### Installing
 
 Go to the api directory and install the dependencies
 ```
 cd api
-npm intall
+npm install
 ```
 
 Go to the react-google-scholar directory and install the dependencies 
@@ -29,6 +31,8 @@ cd react-google-scholar
 npm install
 ```
 
+Create a new project in Neo4j and set the password to 'cs411'. Move the /neo4jdata/ csv files into your projects import folder and run the cypher to import the database. 
+
 ## Running Project
 
 Go to the api directory and run the graphql server
@@ -36,6 +40,9 @@ Go to the api directory and run the graphql server
 cd api
 npm start
 ```
+
+Go to the Neo4j Desktop app and run the Neo4j server
+
 
 Go to the react-google-scholar directory and run the react program
 ```
